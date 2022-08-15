@@ -1,4 +1,6 @@
 service : {
-  topUp: (nat) -> () oneway;
-  widthdraw: (nat) -> () oneway;
+  checkBlance: () -> (float64) query;
+  compound: () -> () oneway;
+  topUp: (float64) -> () oneway;
+  widthdraw: (float64) -> () oneway;
 }
